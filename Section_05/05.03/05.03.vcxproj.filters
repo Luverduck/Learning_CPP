@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="03_01_el_main.cpp">
+    <ClCompile Include="03_01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="03_01_el_func.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="03_01_il_main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="03_01_il_func.cpp">
+    <ClCompile Include="03_02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
