@@ -16,10 +16,10 @@ int main()
 	// 해당 블록 스코프의 바로 바깥 블록 스코프가 그 다음으로 가장 가까운 블록 스코프가 된다.
 	int var = 5;
 	{
-		int var = 3;
-		cout << var << endl;	// 결과 : 3
+		//int var = 3;
+		cout << var << endl; // 결과 : 5
 	}
-	cout << var << endl;		// 결과 : 5
+	cout << var << endl;	// 결과 : 5
 
 	return 0;
 };
