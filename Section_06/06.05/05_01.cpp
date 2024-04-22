@@ -1,4 +1,4 @@
-// Section 05. 포인터와 참조
+// Section 06. 변수와 메모리
 // 06.05 메모리 동적 할당
 
 #define _CRT_SECURE_NO_WARNINGS
