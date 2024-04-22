@@ -1,4 +1,4 @@
-// Section 05. 포인터와 참조
+// Section 06. 변수와 메모리
 // 06.04 변수의 기억 수명
 
 #define _CRT_SECURE_NO_WARNINGS
