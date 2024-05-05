@@ -1,5 +1,5 @@
 // Section 04. 흐름 제어
-// 04.07 점프문 break, continue
+// 04.07 반복문 for-each (C++ 11)
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -9,14 +9,12 @@ using namespace std;
 
 int main()
 {
-	// for문에서의 break
-	for (int i = 0; i < 10; i++)
-	{
-		if (i > 3)
-			break;
+	// 배열 선언
+	int arr[5] = { 1, 2, 3, 4, 5 };
 
-		cout << "i = " << i << endl;
-	};
+	// for-each문
+	for (int iter : arr)
+		cout << iter << " ";
 
 	return 0;
 }
