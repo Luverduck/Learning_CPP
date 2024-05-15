@@ -1,5 +1,5 @@
 // Section 09. 함수
-// 09.06 함수의 반환형
+// 09.06 가변 인수
 
 #define _CRT_SECURE_NO_WARNINGS
 
