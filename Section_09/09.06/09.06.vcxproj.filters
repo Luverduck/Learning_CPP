@@ -18,14 +18,5 @@
     <ClCompile Include="06_01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="06_02.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="06_03.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="06_02_1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

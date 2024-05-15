@@ -5,25 +5,36 @@
 
 #include <iostream>
 
+// <cstdarg>
+#include <cstdarg>
+
 using namespace std;
 
-// 함수
-int func(int v_x)
+
+double getAvg(int count, ...)
 {
-	// 지역 변수 초기화
-	int x = v_x * 2;
-	
-	// 지역 변수의 값으로의 반환
-	return x;
-}
+	// 합계를 0으로 초기화
+	double sum = 0.0;
+
+	// 인수 포인터 (argument pointer)
+	va_list ap;
+
+	// 인수 포인터를 고정 인수 count의 메모리 다음 메모리 주소로 초기화
+	va_start(ap, count);
+
+	for (int i = 0; i < count; i++)
+		// 인수 포인터에 저장된 메모리 주소에 저장된 값을 int형으로 매크로 확장한다.
+		sum += va_arg(ap, int); // 그 후 인수 포인터를 다음 메모리 주소로 초기화한다.
+
+	// 인수 포인터의 주소를 null로 초기화한다.
+	va_end(ap);
+
+	return sum / count;
+};
 
 int main()
 {
-	// 함수 호출 및 값으로의 반환
-	int ret = func(10);
-
-	// 반환값 출력
-	cout << ret << endl;
+	cout << getAvg(4, 1, 2, 3, 4) << endl;
 
 	return 0;
 }
