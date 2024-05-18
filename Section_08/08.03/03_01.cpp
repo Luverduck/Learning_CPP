@@ -12,9 +12,9 @@ int main()
 	// 구조체 정의 (메모리에 할당 X)
 	struct Person
 	{
-		char name[6];
 		int age;
 		float height;
+		char name[6]; // 메모리 패딩 확인을 위해 6[byte]로 변경
 	};
 
 	// 구조체 변수 선언 (메모리에 할당 O)
@@ -24,9 +24,9 @@ int main()
 	cout << "sizeof(aladin) = " << sizeof(aladin) << " " << &aladin << endl;
 
 	// 구조체 멤버의 메모리 크기
-	cout << "sizeof(name)   = " << sizeof(aladin.name) << "  " << &(aladin.name) << endl;;
 	cout << "sizeof(age)    = " << sizeof(aladin.age) << "  " << &(aladin.age) << endl;
 	cout << "sizeof(height) = " << sizeof(aladin.height) << "  " << &(aladin.height) << endl;
+	cout << "sizeof(name)   = " << sizeof(aladin.name) << "  " << &(aladin.name) << endl;
 
 	return 0;
 };
