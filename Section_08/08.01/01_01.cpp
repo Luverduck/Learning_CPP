@@ -9,9 +9,9 @@ using namespace std;
 
 struct Person
 {
-	char name[8];
 	int age;
 	float height;
+	char name[8];
 };
 
 int main()
@@ -24,18 +24,18 @@ int main()
 	person.height = 163.7;
 
 	// 구조체 변수 초기화
-	Person aladin = { "Aladin", 20, 180.5 };
+	Person aladin = { 20, 180.5, "Aladin" };
 	// (C++ 11) 일관된 초기화 (uniform initialization)
-	Person genie { "Genie", 20, 195.8 };
+	Person genie { 20, 195.8, "Genie" };
 	// (C++ 20) 지정된 초기화 (designated initialization)
-	Person japar{ .name = "Japar", .age = 41, .height = 185.4 };
+	Person japar{ .age = 41, .height = 185.4, .name = "Japar" };
 
 	// 구조체 선언과 동시에 구조체 변수 선언
 	struct Animal
 	{
-		char name[8];
 		int age;
 		float height;
+		char name[8];
 	} abu;
 
 	return 0;
