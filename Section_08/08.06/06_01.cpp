@@ -13,7 +13,7 @@ int main()
 	struct Phone
 	{
 		int area;
-		char number[14];
+		char number[15];
 	};
 
 	// 구조체를 멤버로 가지는 구조체의 정의
