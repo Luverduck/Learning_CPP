@@ -9,14 +9,14 @@ using namespace std;
 
 struct Person
 {
-	char name[8];
 	int age;
 	float height;
+	char name[8];
 };
 
 int main()
 {
-	Person aladin = { "Aladin", 20, 180.5 };
+	Person aladin = { 20, 180.5, "Aladin" };
 
 	// 구조체 포인터의 선언
 	Person* p_person;
@@ -28,9 +28,9 @@ int main()
 	Person* p_aladin = &aladin;
 
 	// 구조체 포인터를 통한 멤버의 접근
-	cout << p_aladin->name << endl;
 	cout << p_aladin->age << endl;
 	cout << p_aladin->height << endl;
+	cout << p_aladin->name << endl;
 
 	return 0;
 };
