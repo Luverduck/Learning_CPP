@@ -16,11 +16,11 @@ struct Person
 
 int main()
 {
-	// 구조체의 대입 연산
 	Person aladin = { 20, 180.5, "Aladin" };
 	Person genie = { 100, 195.8, "Genie" };
 
-	// 구조체 변수에 다른 구조체 변수를 대입 연산하면 깊은 복사(deep copy)한다.
+	// 구조체의 대입 연산
+	// 구조체 변수에 다른 구조체 변수를 대입 연산하면 얕은 복사(shallow copy)한다.
 	aladin = genie;
 
 	cout << aladin.age << endl;
