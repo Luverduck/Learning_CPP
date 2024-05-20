@@ -15,8 +15,8 @@ int main()
 		int age;
 		float height;
 		char name[8];
-		struct 
-		{ 
+		struct
+		{
 			int area;
 			char number[15];
 		};
